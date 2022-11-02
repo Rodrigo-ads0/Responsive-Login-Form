@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+form {
+    /* border: 1px solid red; */
+    width: 65%;
+}
+fieldset input {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    border: 2px solid #afb6c2;
+    background-color: transparent;
+    border-radius: 4px;
+    color: white;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16x;
+}
+
+.butao {
+    width: 65%;
+    height: 8%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC632;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#email:focus{
+    border: 5px solid  #FFC632;
+
+}
+
+
+a {
+    color:  #FFC632;
+}
+
+
+#lembre-me {
+    width: 20px;
+}
+
+fieldset input #lembre-me {
+    background-color: transparent;
+}
+
+.checkbox1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox1 input {
+    display: none;
+}
+
+.checkbox1 input + label:before {
+    content: '';
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.checkbox1 input:checked + label::before {
+    background-color:  #FFC632;
+    border: 1px solid  #FFC632;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg%27%3E%3Cpath d='M16.6667 5L7.50004 14.1667L3.33337 10' stroke='%23473404' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+   
+
+
+.logo-box {
+    position: absolute;
+    display: flex;
+    justify-content:flex-start;
+    padding: 2rem;
+}
+
+.logo {
+    max-width:20rem;  
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #191816;
+}
+
+.form-box{
+    border-radius: 10px;
+    background-color: #24221F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    gap: 1rem;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rigth {
+    width: 50%;
+    height: 100%;
+}
+.img {
+    background-image: url(images/images/side-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .rigth {
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .form-box{
+        padding: 20px;
+        width: 100%;
+        background-color: transparent;
+        /* border: 1px solid red; */
+
+    }
+
+    form {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .butao {
+        width: 100%;
+        height: 8%;
+    }
+
+}
